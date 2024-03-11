@@ -78,6 +78,7 @@ func (u *onuUsecase) getBoard1Config(ponID int) *model.OltConfig {
 			OnuStatusOID:       u.cfg.Board1Pon1.OnuStatusOID,
 			OnuIPAddressOID:    u.cfg.Board1Pon1.OnuIPAddressOID,
 			OnuDescriptionOID:  u.cfg.Board1Pon1.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon1.OnuUserPppoeOID,
 		}
 	case 2:
 		return &model.OltConfig{
@@ -90,6 +91,7 @@ func (u *onuUsecase) getBoard1Config(ponID int) *model.OltConfig {
 			OnuStatusOID:       u.cfg.Board1Pon2.OnuStatusOID,
 			OnuIPAddressOID:    u.cfg.Board1Pon2.OnuIPAddressOID,
 			OnuDescriptionOID:  u.cfg.Board1Pon2.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon2.OnuUserPppoeOID,
 		}
 	case 3: // PON 3
 		return &model.OltConfig{
@@ -102,6 +104,7 @@ func (u *onuUsecase) getBoard1Config(ponID int) *model.OltConfig {
 			OnuStatusOID:       u.cfg.Board1Pon3.OnuStatusOID,
 			OnuIPAddressOID:    u.cfg.Board1Pon3.OnuIPAddressOID,
 			OnuDescriptionOID:  u.cfg.Board1Pon3.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon3.OnuUserPppoeOID,
 		}
 	case 4: // PON 4
 		return &model.OltConfig{
@@ -114,6 +117,7 @@ func (u *onuUsecase) getBoard1Config(ponID int) *model.OltConfig {
 			OnuStatusOID:       u.cfg.Board1Pon4.OnuStatusOID,
 			OnuIPAddressOID:    u.cfg.Board1Pon4.OnuIPAddressOID,
 			OnuDescriptionOID:  u.cfg.Board1Pon4.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon4.OnuUserPppoeOID,
 		}
 	case 5: // PON 5
 		return &model.OltConfig{
@@ -126,6 +130,7 @@ func (u *onuUsecase) getBoard1Config(ponID int) *model.OltConfig {
 			OnuStatusOID:       u.cfg.Board1Pon5.OnuStatusOID,
 			OnuIPAddressOID:    u.cfg.Board1Pon5.OnuIPAddressOID,
 			OnuDescriptionOID:  u.cfg.Board1Pon5.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon5.OnuUserPppoeOID,
 		}
 	case 6: // PON 6
 		return &model.OltConfig{
@@ -138,6 +143,7 @@ func (u *onuUsecase) getBoard1Config(ponID int) *model.OltConfig {
 			OnuStatusOID:       u.cfg.Board1Pon6.OnuStatusOID,
 			OnuIPAddressOID:    u.cfg.Board1Pon6.OnuIPAddressOID,
 			OnuDescriptionOID:  u.cfg.Board1Pon6.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon6.OnuUserPppoeOID,
 		}
 	case 7: // PON 7
 		return &model.OltConfig{
@@ -150,6 +156,7 @@ func (u *onuUsecase) getBoard1Config(ponID int) *model.OltConfig {
 			OnuStatusOID:       u.cfg.Board1Pon7.OnuStatusOID,
 			OnuIPAddressOID:    u.cfg.Board1Pon7.OnuIPAddressOID,
 			OnuDescriptionOID:  u.cfg.Board1Pon7.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon7.OnuUserPppoeOID,
 		}
 	case 8: // PON 8
 		return &model.OltConfig{
@@ -162,6 +169,116 @@ func (u *onuUsecase) getBoard1Config(ponID int) *model.OltConfig {
 			OnuStatusOID:       u.cfg.Board1Pon8.OnuStatusOID,
 			OnuIPAddressOID:    u.cfg.Board1Pon8.OnuIPAddressOID,
 			OnuDescriptionOID:  u.cfg.Board1Pon8.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon8.OnuUserPppoeOID,
+		}
+	case 9: // PON 9
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board1Pon9.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board1Pon9.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board1Pon9.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board1Pon9.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board1Pon9.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board1Pon9.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board1Pon9.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board1Pon9.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon9.OnuUserPppoeOID,
+		}
+	case 10: // PON 10
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board1Pon10.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board1Pon10.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board1Pon10.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board1Pon10.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board1Pon10.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board1Pon10.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board1Pon10.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board1Pon10.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon10.OnuUserPppoeOID,
+		}
+	case 11: // PON 11
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board1Pon11.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board1Pon11.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board1Pon11.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board1Pon11.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board1Pon11.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board1Pon11.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board1Pon11.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board1Pon11.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon11.OnuUserPppoeOID,
+		}
+
+	case 12: // PON 12
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board1Pon12.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board1Pon12.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board1Pon12.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board1Pon12.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board1Pon12.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board1Pon12.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board1Pon12.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board1Pon12.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon12.OnuUserPppoeOID,
+		}
+
+	case 13: // PON 13
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board1Pon13.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board1Pon13.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board1Pon13.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board1Pon13.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board1Pon13.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board1Pon13.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board1Pon13.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board1Pon13.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon13.OnuUserPppoeOID,
+		}
+
+	case 14: // PON 14
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board1Pon14.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board1Pon14.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board1Pon14.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board1Pon14.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board1Pon14.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board1Pon14.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board1Pon14.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board1Pon14.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon14.OnuUserPppoeOID,
+		}
+
+	case 15: // PON 15
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board1Pon15.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board1Pon15.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board1Pon15.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board1Pon15.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board1Pon15.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board1Pon15.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board1Pon15.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board1Pon15.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon15.OnuUserPppoeOID,
+		}
+
+	case 16: // PON 16
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board1Pon16.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board1Pon16.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board1Pon16.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board1Pon16.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board1Pon16.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board1Pon16.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board1Pon16.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board1Pon16.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board1Pon16.OnuUserPppoeOID,
 		}
 	default:
 		log.Error().Msg("Invalid PON ID") // Log error message
@@ -184,6 +301,7 @@ func (u *onuUsecase) getBoard2Config(ponID int) *model.OltConfig {
 			OnuStatusOID:       u.cfg.Board2Pon1.OnuStatusOID,
 			OnuIPAddressOID:    u.cfg.Board2Pon1.OnuIPAddressOID,
 			OnuDescriptionOID:  u.cfg.Board2Pon1.OnuDescriptionOID,
+			OnuUserPppoeOID:    u.cfg.Board2Pon1.OnuUserPppoeOID,
 		}
 	case 2: // PON 2
 		return &model.OltConfig{
@@ -268,6 +386,110 @@ func (u *onuUsecase) getBoard2Config(ponID int) *model.OltConfig {
 			OnuStatusOID:       u.cfg.Board2Pon8.OnuStatusOID,
 			OnuIPAddressOID:    u.cfg.Board2Pon8.OnuIPAddressOID,
 			OnuDescriptionOID:  u.cfg.Board2Pon8.OnuDescriptionOID,
+		}
+
+	case 9: // PON 9
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board2Pon9.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board2Pon9.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board2Pon9.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board2Pon9.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board2Pon9.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board2Pon9.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board2Pon9.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board2Pon9.OnuDescriptionOID,
+		}
+
+	case 10: // PON 10
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board2Pon10.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board2Pon10.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board2Pon10.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board2Pon10.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board2Pon10.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board2Pon10.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board2Pon10.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board2Pon10.OnuDescriptionOID,
+		}
+
+	case 11: // PON 11
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board2Pon11.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board2Pon11.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board2Pon11.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board2Pon11.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board2Pon11.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board2Pon11.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board2Pon11.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board2Pon11.OnuDescriptionOID,
+		}
+
+	case 12: // PON 12
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board2Pon12.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board2Pon12.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board2Pon12.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board2Pon12.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board2Pon12.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board2Pon12.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board2Pon12.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board2Pon12.OnuDescriptionOID,
+		}
+
+	case 13: // PON 13
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board2Pon13.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board2Pon13.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board2Pon13.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board2Pon13.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board2Pon13.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board2Pon13.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board2Pon13.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board2Pon13.OnuDescriptionOID,
+		}
+
+	case 14: // PON 14
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board2Pon14.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board2Pon14.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board2Pon14.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board2Pon14.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board2Pon14.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board2Pon14.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board2Pon14.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board2Pon14.OnuDescriptionOID,
+		}
+
+	case 15: // PON 15
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board2Pon15.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board2Pon15.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board2Pon15.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board2Pon15.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board2Pon15.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board2Pon15.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board2Pon15.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board2Pon15.OnuDescriptionOID,
+		}
+
+	case 16: // PON 16
+		return &model.OltConfig{
+			BaseOID:            u.cfg.OltCfg.BaseOID1,
+			OnuIDNameOID:       u.cfg.Board2Pon16.OnuIDNameOID,
+			OnuTypeOID:         u.cfg.Board2Pon16.OnuTypeOID,
+			OnuSerialNumberOID: u.cfg.Board2Pon16.OnuSerialNumberOID,
+			OnuRxPowerOID:      u.cfg.Board2Pon16.OnuRxPowerOID,
+			OnuTxPowerOID:      u.cfg.Board2Pon16.OnuTxPowerOID,
+			OnuStatusOID:       u.cfg.Board2Pon16.OnuStatusOID,
+			OnuIPAddressOID:    u.cfg.Board2Pon16.OnuIPAddressOID,
+			OnuDescriptionOID:  u.cfg.Board2Pon16.OnuDescriptionOID,
 		}
 	default:
 		log.Error().Msg("Invalid PON ID") // Log error message
@@ -464,6 +686,12 @@ func (u *onuUsecase) GetByBoardIDPonIDAndOnuID(boardID, ponID, onuID int) (
 		onuDescription, err := u.getDescription(oltConfig.OnuDescriptionOID, strconv.Itoa(onuInfo.ID))
 		if err == nil {
 			onuInfo.Description = onuDescription // Set ONU Description from SNMP Walk result to onuInfo variable (ONU Description)
+		}
+
+		// Get Data ONU User PPPOE from SNMP Walk using getDescription method
+		onuUserPppoe, err := u.getUserPppoe(oltConfig.OnuUserPppoeOID, strconv.Itoa(onuInfo.ID))
+		if err == nil {
+			onuInfo.UserPppoe = onuUserPppoe // Set ONU UserPPPOE from SNMP Walk result to onuInfo variable (ONU UserPPPOE)
 		}
 
 		onuInformationList = onuInfo // Append onuInfo variable to onuInformationList slice
@@ -1003,3 +1231,29 @@ func (u *onuUsecase) getDescription(OnuDescriptionOID, onuID string) (string, er
 
 	return onuDescription, nil // Return ONU Description
 }
+
+func (u *onuUsecase) getUserPppoe(OnuUserPppoeOID, onuID string) (string, error) {
+
+	var onuUserPppoe string // Variable to store ONU Description
+
+	baseOID := u.cfg.OltCfg.BaseOID1 // Base OID variable get from config
+
+	// Perform SNMP Get to get ONU Description using snmpRepository Get method with timeout context parameter
+	oids := []string{baseOID + OnuUserPppoeOID + "." + onuID}
+	result, err := u.snmpRepository.Get(oids)
+	if err != nil {
+		log.Error().Msg("Failed to perform SNMP Get for userpppoe: " + err.Error()) // Log error message to logger
+		return "", errors.New("failed to perform SNMP Get")                         // Return error
+	}
+
+	// Check if the result contains the expected OID
+	if len(result.Variables) > 0 {
+		onuUserPppoe = utils.ExtractName(result.Variables[0].Value) // Extract ONU User PPPOE from the result
+	} else {
+		log.Error().Msg("Failed to get ONU Description: No variables in the response")
+		return "", errors.New("no variables in the response")
+	}
+
+	return onuUserPppoe, nil // Return ONU Description
+}
+
